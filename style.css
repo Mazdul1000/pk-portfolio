@@ -20,7 +20,9 @@ body {
     height: 65px;
     background-color:	#222544 ;
     justify-content: flex-end;
-    position: fixed;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 
 }
 
@@ -67,7 +69,7 @@ nav a:hover{
 
 #welcome-section{
     background-color: #000;
-  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  background-image: linear-gradient(62deg, #7d99af 0%, #8a5d5d 100%);
     height: 100vh;
     width: 100%;
     display: flex;
@@ -95,65 +97,11 @@ nav a:hover{
 
 }
 
-/* Project Section */
-#projects{
-    background-color: black;
+/* about section */
+.about{
+    height: 2000px;
 }
-#projects h1{
-    text-align: center;
-    font-size: 36px;
-    color: antiquewhite;
-    font-family: inherit;
-    font-weight: bold;
-
-}
-.row{
-    color: antiquewhite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.project-tile{
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    width: 40vw;
-    border: 5px #222544 solid;
-    border-radius: 5px;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
-}
-
-@media (max-width:800px) {
-    .row{
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    .project-tile{
-        width: 100%;
-        flex-wrap: wrap;
-        margin: 15px auto;
-        margin-top: 30px;
-    }
-    
-}
-
-.project-header{
-    background-color: #222544;
-    margin: 0;
-    padding: 15px;
-    align-items: center;
-    text-align: center;
-    font-size: 20px;
-    font-weight: bolder;
-    
-}
-    .project-header a{
-    text-decoration: none;
-    color: antiquewhite;
-}
-
+/* ***************************** */
 /* social media section */
 
 #social-media{
